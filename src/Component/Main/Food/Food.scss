@@ -1,0 +1,20 @@
+.food__p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #c2c2c2;
+  margin-left: 15px;
+}
+.food__wrapper1 {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 90px;
+}
+@media only screen and (max-width: 500px) {
+  .food__wrapper1 {
+    display: none;
+  }
+  .videos__item:nth-child(5) {
+    margin-bottom: 50px;
+  }
+}
