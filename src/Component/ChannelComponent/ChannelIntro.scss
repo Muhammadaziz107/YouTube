@@ -8,3 +8,45 @@
   border-radius: 14px;
   margin-top: 20px;
 }
+
+@media only screen and (max-width: 1250px) {
+  .ChannelIntro {
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .ChannelIntro {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .ChannelIntro {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .ChannelIntro {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .ChannelIntro {
+    width: 410px;
+    height: 200px;
+    margin: auto 20px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .ChannelIntro {
+    width: 350px;
+    height: 200px;
+    margin: auto 20px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .ChannelIntro {
+    width: 300px;
+    height: 200px;
+    margin: auto 20px;
+  }
+} ;

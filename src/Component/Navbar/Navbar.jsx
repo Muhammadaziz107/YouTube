@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.scss";
-import { NavLink, Switch, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 // icons
 
@@ -17,11 +17,6 @@ import GamesIcon from "../Lib/GamesIcon";
 import ShowMoreIcon from "../Lib/ShowMoreIcon";
 import SettingsIcon from "../Lib/SettingsIcon";
 
-// pages
-
-import Home from "../../Pages/Home/Home";
-import Channel from "../../Pages/Channel/Channel";
-import Videolar from "../../Pages/Video/Video";
 // userimages
 
 import user1 from "../../Assets/Images/user1.jpg";

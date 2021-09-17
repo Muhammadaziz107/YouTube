@@ -1,9 +1,12 @@
 import React from "react";
 import "./Channel.scss";
-import ChannelInfo from "../../Component/ChannelComponent/ChannelIntro";
+import ChannelIntro from "../../Component/ChannelComponent/ChannelIntro";
+import ChannelInfo from "../../Component/ChannelInfo/ChannelInfo";
+
 function Channel() {
   return (
     <div className="channel">
+      <ChannelIntro />
       <ChannelInfo />
     </div>
   );
