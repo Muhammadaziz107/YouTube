@@ -11,8 +11,8 @@ function Dollie() {
       .then(data => setData(data.slice(1, 6)));
   }, []);
   return (
-    <div className="dollie">
-      <NavLink to="/channel" className="dollie__wrapper1">
+    <div className="dollie ">
+      <NavLink to="/channel" className="dollie__wrapper1 dollie-active">
         <img
           className="dollie__wrapper1__img"
           src={UserLogo}
