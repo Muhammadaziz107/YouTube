@@ -17,6 +17,11 @@ import GamesIcon from "../Lib/GamesIcon";
 import ShowMoreIcon from "../Lib/ShowMoreIcon";
 import SettingsIcon from "../Lib/SettingsIcon";
 
+// pages
+
+import Home from "../../Pages/Home/Home";
+import Channel from "../../Pages/Channel/Channel";
+import Videolar from "../../Pages/Video/Video";
 // userimages
 
 import user1 from "../../Assets/Images/user1.jpg";
@@ -96,7 +101,6 @@ function Navbar() {
           </NavLink>
         </li>
       </ul>
-
       <ul className="navbar__list2">
         <h3 className="list2__heading">Subscriptions</h3>
         <li className="list2__item">
@@ -136,7 +140,6 @@ function Navbar() {
           </NavLink>
         </li>
       </ul>
-
       <button className="settingsBtn" type="button">
         <SettingsIcon />
         <p className="settingsBtn__p">Setting</p>
