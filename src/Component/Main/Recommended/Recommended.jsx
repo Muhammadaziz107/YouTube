@@ -1,19 +1,34 @@
 import React from "react";
 import "./Recommended.scss";
 import { NavLink } from "react-router-dom";
+import LeftArrow from "../../Lib/Left";
+import RightArrow from "../../Lib/Right";
 function Recommended() {
   const [data, setData] = React.useState([]);
-
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then(response => response.json())
-      .then(data => setData(data.slice(1, 4)));
+      .then(data => {
+        setData(data.slice(1, 4));
+        setLoading(false);
+      });
   }, []);
   return (
     <div className="recommended">
       <h2 className="recommended__heading">Recommended</h2>
 
       <div className="recommended-videos">
+        {loading && <p>loading...</p>}
+        <div className="dollie__videos__div1">
+          <div className="dollie__videos__left">
+            <LeftArrow />
+          </div>
+
+          <div className="dollie__videos__right">
+            <RightArrow />
+          </div>
+        </div>
         <ul className="recommended-video">
           {data.length &&
             data.map(row => (
@@ -30,7 +45,9 @@ function Recommended() {
 
                   <span className="video__span-wrapper recommeded__span-wrapper">
                     <p className="video__span-wrapper__p">80k views · 3 days ago</p>
-                    <p className="recommended-video__p">Gussie French</p>
+                    <NavLink to="/channel" className="recommended-video__p">
+                      Gussie French
+                    </NavLink>
                   </span>
                 </NavLink>
               </li>

@@ -11,10 +11,14 @@ import User9 from "../../Assets/Images/user9.svg";
 
 function ChannelInfo() {
   const [data, setData] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then(response => response.json())
-      .then(data => setData(data.slice(1, 6)));
+      .then(data => {
+        setData(data.slice(1, 6));
+        setLoading(false);
+      });
   }, []);
   return (
     <div className="ChannelInfo">
@@ -92,6 +96,7 @@ function ChannelInfo() {
             <h4 className="dollie__wrapper1__username1">Margaret Phelps videos</h4>
           </NavLink>
           <div className="dollie__videos">
+            {loading && <p>loading...</p>}
             <ul className="videos1">
               {data.length &&
                 data.map(row => (

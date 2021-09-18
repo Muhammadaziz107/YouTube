@@ -62,6 +62,21 @@
   margin-left: 30px;
 }
 
+.dollie__videos__div1 {
+  margin-left: 1100px;
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+.dollie__videos__left {
+  margin-right: 10px;
+}
+
+.video__span-wrapper__navlink {
+  text-decoration: none;
+  color: #19202c;
+  font-size: 15px;
+}
 @media only screen and (max-width: 1300px) {
   .videos {
     width: 100%;
@@ -98,6 +113,9 @@
     flex-direction: column;
     margin: 0 30px;
     padding: 0 20px;
+  }
+  .dollie__videos__div1 {
+    display: none;
   }
 
   .videos__item:first-child {

@@ -2,12 +2,18 @@ import React from "react";
 import "./Food.scss";
 import { NavLink } from "react-router-dom";
 import FoodImg from "../../../Assets/Images/main-section-img1.jpg";
+import LeftArrow from "../../Lib/Left";
+import RightArrow from "../../Lib/Right";
 function Food() {
   const [data, setData] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then(response => response.json())
-      .then(data => setData(data.slice(1, 6)));
+      .then(data => {
+        setData(data.slice(1, 6));
+        setLoading(false);
+      });
   }, []);
   return (
     <div className="dollie">
@@ -23,6 +29,16 @@ function Food() {
         <p className="food__p">Recommended channel for you</p>
       </NavLink>
       <div className="dollie__videos">
+        {loading && <p>loading...</p>}
+        <div className="dollie__videos__div1">
+          <div className="dollie__videos__left">
+            <LeftArrow />
+          </div>
+
+          <div className="dollie__videos__right">
+            <RightArrow />
+          </div>
+        </div>
         <ul className="videos">
           {data.length &&
             data.map(row => (
@@ -39,7 +55,9 @@ function Food() {
 
                   <span className="video__span-wrapper">
                     <p className="video__span-wrapper__p">80k views · 3 days ago</p>
-                    <p>Food & Drink</p>
+                    <NavLink to="/channel" className="video__span-wrapper__link">
+                      Food & Drink
+                    </NavLink>
                   </span>
                 </NavLink>
               </li>
