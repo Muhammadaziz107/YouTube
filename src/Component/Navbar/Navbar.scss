@@ -121,25 +121,41 @@
     margin-bottom: 0px;
     border-top: 2px solid #c2c2c2;
   }
-}
-@media only screen and (max-width: 370px) {
-  .navbar__list1 {
-    // padding-left: 50px;
-    // margin-left: 30px;
-  }
 
   .list1__item:nth-child(1) {
     font-size: 14px;
-    margin-left: -40px;
+    margin-left: -30px;
   }
 
   .list1__item:nth-child(2) {
     font-size: 14px;
+    margin-left: 50px;
   }
   .list1__item:nth-child(3) {
     font-size: 14px;
+    margin-left: 50px;
   }
   .list1__item:nth-child(4) {
     font-size: 14px;
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .list1__item:nth-child(1) {
+    font-size: 14px;
+    margin-left: -30px;
+  }
+
+  .list1__item:nth-child(2) {
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .list1__item:nth-child(3) {
+    font-size: 14px;
+    margin-left: 50px;
+  }
+  .list1__item:nth-child(4) {
+    font-size: 14px;
+    margin-left: 50px;
   }
 }
