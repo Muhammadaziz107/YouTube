@@ -8,7 +8,8 @@ import SearchBtn from "../Lib/HeaderSearch";
 import User7 from "../../Assets/Images/user7.jpg";
 import User8 from "../../Assets/Images/user8.jpg";
 import User9 from "../../Assets/Images/user9.svg";
-
+import LeftArrow from "../Lib/Left";
+import RightArrow from "../Lib/Right";
 function ChannelInfo() {
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
@@ -90,38 +91,43 @@ function ChannelInfo() {
       </div>
 
       <div className="channelinfo__videos">
-        {/* ============ */}
         <div className="dollie ">
           <NavLink to="/channel" className="dollie__wrapper1 dollie-active">
             <h4 className="dollie__wrapper1__username1">Margaret Phelps videos</h4>
           </NavLink>
-          <div className="dollie__videos">
-            {loading && <p>loading...</p>}
-            <ul className="videos1">
-              {data.length &&
-                data.map(row => (
-                  <li className="videos__item">
-                    <NavLink className="video-navlink" to="/video">
-                      <img
-                        className="video-img"
-                        src={row.url}
-                        alt="row url img"
-                        width="250"
-                        height="150"
-                      />
-                      <p className="video-title">{row.title}</p>
+          <div className="dollie__videos__div1">
+            <div className="dollie__videos__left">
+              <LeftArrow />
+            </div>
 
-                      <span className="video__span-wrapper">
-                        <p className="video__span-wrapper__p">80k views · 3 days ago</p>
-                        <p>Dollie Blair</p>
-                      </span>
-                    </NavLink>
-                  </li>
-                ))}
-            </ul>
+            <div className="dollie__videos__right">
+              <RightArrow />
+            </div>
           </div>
+
+          <ul className="videos1">
+            {data.length &&
+              data.map(row => (
+                <li className="videos__item">
+                  <NavLink className="video-navlink" to="/video">
+                    <img
+                      className="video-img"
+                      src={row.url}
+                      alt="row url img"
+                      width="250"
+                      height="150"
+                    />
+                    <p className="video-title">{row.title}</p>
+
+                    <span className="video__span-wrapper">
+                      <p className="video__span-wrapper__p">80k views · 3 days ago</p>
+                      <p>Dollie Blair</p>
+                    </span>
+                  </NavLink>
+                </li>
+              ))}
+          </ul>
         </div>
-        {/* ================= */}
       </div>
     </div>
   );

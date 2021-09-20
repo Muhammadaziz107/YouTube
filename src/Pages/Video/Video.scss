@@ -1,0 +1,176 @@
+.videopage {
+  display: flex;
+  margin-left: 90px;
+  margin-top: 80px;
+}
+.videopage__video {
+  border-radius: 14px;
+}
+.videopage__wrapper__div {
+  display: flex;
+  align-items: center;
+}
+.videopage__wrapper__div__span1 {
+  display: flex;
+  flex-direction: column;
+}
+.videopage__wrapper__div__span1 h2 {
+  font-size: 25px;
+  line-height: 45px;
+  color: #192646;
+}
+.videopage__wrapper__div__span1 p {
+  font-size: 20px;
+  line-height: 25px;
+  color: #c2c2c2;
+  margin-top: -20px;
+}
+.videopage__wrapper__div__span2 {
+  display: flex;
+  display: block;
+  align-items: center;
+  margin-left: auto;
+}
+.videopage__wrapper__div__span2__btn1 {
+  background-color: #ebebeb;
+  color: #192646;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: #ebebeb;
+}
+.videopage__wrapper__div__span2__btn1 + .videopage__wrapper__div__span2__btn1 {
+  margin-left: 10px;
+}
+.videopage__wrapper__div__span2__btn1:nth-child(3) {
+  margin-right: 10px;
+}
+.videopage__channelinfo {
+  display: flex;
+  align-items: start;
+  box-shadow: 0px -2px rgba(216, 216, 216, 0.5);
+  margin-top: 20px;
+}
+
+.videopage__channelinfo img {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.videopage__channelinfo__span .h3 {
+  font-size: 26px;
+  line-height: 33px;
+  text-decoration: none;
+  margin-bottom: -15px;
+  color: #19202c;
+}
+.videopage__channelinfo__span__p1 {
+  font-size: 13px;
+  line-height: 16px;
+  color: #c2c2c2;
+}
+.videopage__channelinfo__span__p2 {
+  width: 550px;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+.videopage__channelinfo__span__link {
+  color: #c2c2c2;
+  text-decoration: none;
+}
+
+.videopage__subsc-btn {
+  color: white;
+  background-color: #ff0000;
+  border: #ff0000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-top: 20px;
+}
+
+// ==========================================================
+
+.input-checkbox {
+  position: relative;
+  display: flex;
+}
+.input-checkbox__label {
+  display: block;
+  width: 35px;
+  height: 20px;
+  border-radius: 150px;
+  background: #ebebeb;
+  position: relative;
+  margin: auto;
+}
+.input-checkbox__label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #333;
+  transition: all 0.5s;
+}
+.input-checkbox__input {
+  display: none;
+}
+.input-checkbox__input[type="checkbox"]:checked + .input-checkbox__label::before {
+  background: #27f;
+  left: 16px;
+}
+
+.videopage__wrapper2 {
+  padding: 0 20px;
+}
+.videopage__span-wrapper1 {
+  display: flex;
+  align-items: center;
+}
+.videopage__span-wrapper1 h2 {
+  font-size: 36px;
+  color: #19202c;
+}
+.videopage__span1 {
+  display: flex;
+  align-items: center;
+  margin-left: 190px;
+  margin-right: 0;
+}
+.videopage__span1 p {
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #19202c;
+}
+.videopage__list {
+  margin: 0;
+  margin-left: 25px;
+  padding: 0;
+  list-style-type: none;
+}
+.videopage-img {
+  width: 370px;
+  height: 215px;
+  border-radius: 14px;
+}
+.videopage__list__item__link {
+  text-decoration: none;
+}
+.videopage-title {
+  width: 350px;
+  font-size: 20px;
+  line-height: 33px;
+  color: #19202c;
+  margin-top: -5px;
+}
+.videopage__span-wrapper__navlink {
+  margin-left: auto;
+  text-decoration: none;
+  color: #192646;
+}

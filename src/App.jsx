@@ -9,9 +9,13 @@ function App() {
   return (
     <div className="wrapper">
       <Header />
-      <Navbar />
       <Switch>
-        <Route path="/" component={Home} exact />
+      <Route path="/channel" component={Navbar} exact/>
+      <Route path="/" component={Navbar}  exact/>
+      </Switch>
+      <Switch>
+      
+        <Route path="/" component={Home} exact exact/>
         <Route path="/channel" component={Channel} exact />
         <Route path="/video" component={Videolar} exact />
       </Switch>
