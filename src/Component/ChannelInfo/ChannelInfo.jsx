@@ -12,13 +12,12 @@ import LeftArrow from "../Lib/Left";
 import RightArrow from "../Lib/Right";
 function ChannelInfo() {
   const [data, setData] = React.useState([]);
-  const [loading, setLoading] = React.useState(true);
+
   React.useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/photos")
       .then(response => response.json())
       .then(data => {
         setData(data.slice(1, 6));
-        setLoading(false);
       });
   }, []);
   return (

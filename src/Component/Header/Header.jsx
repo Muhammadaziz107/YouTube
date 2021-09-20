@@ -7,7 +7,7 @@ import MeetingIcon from "../Lib/MeetingIcon";
 import MoreApps from "../Lib/MoreApps";
 import Notifications from "../Lib/Notifications";
 import UserLogoImg from "../../Assets/Images/userlogo.jpg";
-
+import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header className="header">
@@ -15,9 +15,9 @@ function Header() {
         <button className="hamburgerMenu" type="button">
           <HamburgerMenu />
         </button>
-        <button className="youtubeIcon" type="button">
+        <NavLink to="/" className="youtubeIcon" type="button">
           <YoutubeIcon />
-        </button>
+        </NavLink>
         <label className="search-wrapper">
           <input className="search-input" type="text" placeholder="Search" />
           <HeaderSearch className="search-icon" />

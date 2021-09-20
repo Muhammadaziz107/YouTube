@@ -99,7 +99,7 @@ function Videolar() {
           <ul className="videopage__list">
             {data.length &&
               data.map(row => (
-                <li className="videopage__list__item">
+                <li className="videopage__list__item" key={row.id}>
                   <NavLink className="videopage__list__item__link" to="/video">
                     <img
                       className="videopage-img"
