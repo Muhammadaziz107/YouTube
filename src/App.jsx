@@ -10,8 +10,8 @@ function App() {
     <div className="wrapper">
       <Header />
       <Switch>
-        <Route path="/channel" component={Navbar} />
-        <Route path="/" component={Navbar} />
+        <Route path="/channel" component={Navbar} exact />
+        <Route path="/" component={Navbar} exact />
       </Switch>
       <Switch>
         <Route path="/" component={Home} exact />
