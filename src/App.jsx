@@ -10,12 +10,11 @@ function App() {
     <div className="wrapper">
       <Header />
       <Switch>
-      <Route path="/channel" component={Navbar} exact/>
-      <Route path="/" component={Navbar}  exact/>
+        <Route path="/channel" component={Navbar} />
+        <Route path="/" component={Navbar} />
       </Switch>
       <Switch>
-      
-        <Route path="/" component={Home} exact exact/>
+        <Route path="/" component={Home} exact />
         <Route path="/channel" component={Channel} exact />
         <Route path="/video" component={Videolar} exact />
       </Switch>

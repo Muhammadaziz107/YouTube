@@ -32,7 +32,7 @@ function Recommended() {
         <ul className="recommended-video">
           {data.length &&
             data.map(row => (
-              <li className="recommended-video__item">
+              <li className="recommended-video__item" key={row.id}>
                 <NavLink className="recommended-video-navlink" to="/video">
                   <img
                     className="recommended-video-img"

@@ -42,7 +42,7 @@ function Food() {
         <ul className="videos">
           {data.length &&
             data.map(row => (
-              <li className="videos__item">
+              <li className="videos__item" key={row.id}>
                 <NavLink className="video-navlink" to="/video">
                   <img
                     className="video-img"
